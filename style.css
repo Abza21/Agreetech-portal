@@ -1,0 +1,241 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body background */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* ✅ Center only login/register */
+body.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.main-header {
+    background: #1e3c72;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.main-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-header .logo img {
+    height: 36px;
+}
+
+.main-header h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-right input {
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 150px;
+}
+
+.header-right button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background: #ff4b5c;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-right button:hover {
+    background: #e63946;
+}
+
+/* Main container */
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    width: 85%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    gap: 25px;
+}
+
+/* Products panel */
+.products-section {
+    flex: 2;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 8px;
+    font-weight: bold;
+    background: #e6ecf5;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.product-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.product-item:hover {
+    background: #dce6f7;
+}
+
+/* Cart panel */
+.cart-section {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-section h3 {
+    margin-bottom: 10px;
+    color: #1e3c72;
+}
+
+.cart-item {
+    padding: 6px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cart-item:hover,
+.cart-item.selected {
+    background: #ffe4e1;
+}
+
+/* Cart action buttons */
+.cart-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cart-actions button {
+    flex: 1;
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+/* Login/Register container */
+.form-container {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Titles */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e3c72;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #1e3c72;
+    box-shadow: 0 0 5px rgba(30,60,114,0.5);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3c72;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2a5298;
+}
+
+/* Switch link */
+.switch-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #1e3c72;
+    cursor: pointer;
+}
+
+.switch-link:hover {
+    text-decoration: underline;
+}
+
+/* Registration form hidden */
+#registerForm {
+    display: none;
+}
